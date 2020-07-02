@@ -1,0 +1,358 @@
+html {margin:0;
+      padding:0;}
+
+body {margin:0;
+      padding:0;}
+
+@font-face {
+font-family: 'RenoMono';
+font-style: normal;
+font-weight: normal;
+src: url('../fonts/RenoMono.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'AdamCgPro';
+    src: url('../fonts/AdamCgPro.otf') format('truetype'); 
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+.page-one      {
+               width:100%;
+               height:100vh;
+               background-image: 
+                 linear-gradient(to right bottom, 
+                 rgba(255,255,255, .5), 
+                 rgba(128,0,128, .5)) ,
+                 url(../images/background.jpg);
+               background-repeat: no-repeat;
+               background-size:cover;
+               position:relative;
+}
+
+.text-container {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.round-absolute {
+    position: absolute;
+    bottom: 5%;
+    right:-30px;
+}
+
+.round-absolute:hover {
+    cursor: none;
+}
+
+.cerchio {
+    position: relative;
+    height: 230px;
+    width: 230px;
+}
+
+
+.cerchio:hover {
+    cursor: none;
+}
+
+.cerchio p {
+    font-family: 'RenoMono', sans-serif;
+    font-size: 17px;
+    line-height: 23px;
+    color: #3B639E;
+    position: absolute;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.title {
+    max-width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title:hover {
+    cursor: none;
+}
+
+.title h1 {
+    font-family: 'AdamCgPro', sans-serif;
+    color: #fff;
+    margin: 0;
+    font-size: 60px;
+    line-height: 72px;
+    font-weight: 400;
+}
+
+.title h2 {
+    font-family: 'RenoMono', sans-serif;
+    color: #fff;
+    font-size: 36px;
+    line-height: 50px;}
+
+.text{
+    width: 170px;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.text-animate:hover {
+    cursor: none;
+}
+
+.left {text-align: left;}
+
+.center {text-align: center;}
+
+.right {text-align: right;}
+.text p {
+    font-family: 'RenoMono', sans-serif;
+    color: #fff;
+    font-size: 23px;
+    line-height: 12px;
+}
+
+.iscrizioni-mobile {
+    display: none;
+}
+
+.button {
+    padding-top: 50px;
+    max-width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.button:hover {
+    cursor: none;
+}
+
+.button a {
+    font-family: 'RenoMono', sans-serif;
+    color: #fff;
+    font-size: 15px;
+    border: 1px solid #fff;
+    text-decoration: none;
+    padding: 18px 60px;
+    border-radius: 8px;
+    cursor:none;
+    transition: all 2s;
+}
+
+.button a:hover {
+    color:#3B639E;
+    background: #fff;
+    cursor: pointer;
+}
+.page-two {
+               width:100%;
+               height:100vh;
+               background-color: #fff;
+               position: relative;
+}
+
+.text-container-2 {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+.iscrizioni {
+    max-width: 45%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.iscrizioni h1 {
+    font-family: 'AdamCgPro', sans-serif;
+    font-size: 34px;
+    line-height: 36px;
+    color: #3B639E;
+    margin: 0;
+}
+
+.iscrizioni h2 {
+    font-family: 'AdamCgPro', sans-serif;
+    font-size: 20px;
+    line-height: 36px;
+    color: #3B639E;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.iscrizioni p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    line-height: 36px;
+    color: #000;
+    font-weight: 400;
+    margin: 0;
+}
+
+.iscrizioni .p-bold {
+    color: #3B639E;
+    font-weight: 700;
+}
+
+.iscrizioni .padding-100 {
+    padding-top: 100px;
+}
+
+.iscrizioni .note {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #000;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+@media screen and (max-height: 700px) { 
+    
+    .page-one {
+        height: auto;
+    }
+    
+    .text-container {
+        position: relative;
+        transform: none;
+        top:0;
+        left: 0; 
+    }
+    
+     .title {
+        padding-top: 100px;
+    }
+    
+    .button{
+        padding-bottom: 10px;
+    }
+     .page-two{
+        height: auto;
+    }
+    
+    .iscrizioni {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+}
+
+
+@media screen and (max-width: 767px) { 
+    
+    .page-one {
+        height: auto;
+        background-image: url(../images/background-mobile.jpg);
+    }
+    
+    .text-container {
+        position: relative;
+        transform: none;
+        top:0;
+        left: 0;
+    }
+    
+    .round-absolute {
+        display: none;
+    }  
+    
+    .title {
+        max-width: 80%;
+        padding-top: 50px;
+    }
+    .title h2 {  
+    font-size: 26px;
+    margin: 0;
+    padding-top: 10px;
+    }
+    
+    .text {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
+    .text p {
+        font-size: 20px;
+    }
+    
+    .iscrizioni-mobile {
+        max-width: 80%;
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+    
+    
+    .iscrizioni-mobile p {
+        font-family: 'RenoMono', sans-serif;
+        font-size: 24px;
+        line-height: 34px;
+        color: #fff;
+        margin: 0;
+    }
+    
+    .button {
+        max-width: 80%;
+        padding-bottom: 70px;
+    }
+    
+    .button a {
+        font-size: 14px;
+    }
+    
+    .page-two {
+        height: auto;
+    }
+    
+    .iscrizioni {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        max-width: 90%;
+    }
+    
+    .iscrizioni h1 {
+        font-size: 30px;
+    }
+    
+    .iscrizioni h2 {
+        font-size: 18px;
+    }
+    
+    .iscrizioni p {
+        font-size: 16px;
+        line-height: 32px;
+    }
+    
+    .p-bold {
+        display: block;
+    } 
+    .iscrizioni .note {
+        font-size: 12px;
+        line-height: 20px;
+    }
+.iscrizioni .padding-100 {
+    padding-top: 50px;
+}
+    
+}
+
+
+
